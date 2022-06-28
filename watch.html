@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Watch</title>
+    <link rel="stylesheet" href="watch.css">
+</head>
+
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Watch</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="contentBx">
+                <h2>Future on<br> your Hand</h2>
+                <p>1.55” AMOLED Display with high 314 PPI Resolution for a crystal clear image and sharp details.
+                    Metal body (Aluminum Alloy), giving premium and solid look and feel.
+                    Super-Light weight body with only 19.5 grams, 8.95 MM Thin body, comfortable to wear day & night and
+                    during sports activities.
+                    70+ built-in sports modes and 5 ATM water-resistance.
+                    14 days battery life to avoid frequent charging and focus on your daily activities mind free.
+                    GPS + GLONASS dual-satellite positioning chip for increased speed and accuracy.
+                    Monitoring your blood oxygen levels by intelligently monitoring your (SpO2) blood oxygen levels.</p>
+                <a href="#">Buy Now </a>
+            </div>
+            <div class="imgBx">
+                <img src="/watch_images/watch.png" alt="">
+            </div>
+        </div>
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/profile.php?id=100015705791913"><img src="/watch_images/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/_aakash7781/"><img src="/watch_images/instagram.png" alt=""></a></li>
+            <li><a href="#"><img src="/watch_images/twitter.png" alt=""></a></li>
+        </ul>
+        <ul class="menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Abuot</a></li>
+            <li><a href="#">Products</a></li>
+            <li><a href="#">Store</a></li>
+            <li><a href="#">Contact</a></li>
+            </ul>
+    </section>
+    <!--=====================================JAVASCRIPT==============================-->
+    <script type="text/javascript">
+        function toggle() {
+            const toggle = document.querySelector('.toggle')
+            const banner = document.querySelector('.banner')
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+
+    </script>
+    <!--=====================================/JAVASCRIPT==============================-->
+
+</body>
+
+</html>

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pepsi</title>
+    <link rel="stylesheet" href="pepsi.css">
+</head>
+
+<body>
+    
+    <section class="sec">
+        <header>
+            <a href="#"> <img src="assets/pepsi/images/logo.png" alt="logo" class="logo"> </a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Producst</a></li>
+                <li><a href="#">What's New</a></li>
+                <li><a href="#">Newsletters</a></li>
+                <li><a href="#">Contact</a></li>
+
+
+            </ul>
+
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>That's What <br><span>I like</span> </h2>
+                <p>Pepsi is a carbonated soft drink manufactured by PepsiCo. Originally created and developed in 1893 by
+                    Caleb Bradham and introduced as Brad's Drink, it was renamed as Pepsi-Cola in 1898,[1] and then
+                    shortened to Pepsi in 1961. </p>
+                <a href="#">view All Products</a>
+            </div>
+            <div class="imgBox">
+                <img src="/assets/pepsi/images/pepsi001.png" alt="" class="pepsi">
+            </div>
+        </div>
+        <ul class="thumb">
+            <li><img src="/assets/pepsi/images/pepsi001.png" alt=""
+                    onclick="imgslider('/images/pepsi001.png');changeBgcolor('#0062b2') "></li>
+            <li><img src="/images/pepsi002.png" alt=""
+                    onclick="imgslider('/images/pepsi002.png');changeBgcolor('#e60c2c')"></li>
+            <li><img src="/images/pepsi003.png" alt=""
+                    onclick="imgslider('/images/pepsi003.png');changeBgcolor('#1e1e1e')"></li>
+        </ul>;
+        <ul class="sci">
+            <li><a href="https://www.facebook.com/PepsiIndia"><img src="/images/facebook.png" alt=""></a></li>
+            <li><a href="https://www.instagram.com/pepsi/"><img src="/images/instagram.png" alt=""></a></li>
+            <li><a href="https://twitter.com/pepsico?lang=en"><img src="/images/twitter.png" alt=""></a></li>
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+        function imgslider(anything) {
+            document.querySelector('.pepsi').src = anything;
+        }
+        function changeBgcolor(color) {
+            const sec = document.querySelector('.sec');
+            sec.style.background = color;
+        }
+    </script> <!--------IF YOU UNDERSTAND THIS CONTACT ME------->
+    </body>
+    </html>
